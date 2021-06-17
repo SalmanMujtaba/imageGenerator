@@ -13,15 +13,9 @@ class SplashImagePresenter extends React.Component {
 
     this.state = {
       userInput: "",
-      welcomeText: "Please type a string to search for a string"
     }
   }
 
-  componentDidMount() {
-    setTimeout(()=> {
-      this.setState({welcomeText:""});
-    }, 3000);
-  }
   
   handleSubmit(event) {
     this.props.handle(this.state.userInput.trim());
