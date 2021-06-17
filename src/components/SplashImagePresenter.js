@@ -56,7 +56,7 @@ class SplashImagePresenter extends React.Component {
               imagesReceived &&
               data.map(( img, index ) => 
               (
-                <img key={index} src={img} alt={index} >
+                <img className="margin-auto" key={index} src={img} alt={index} >
                 </img>
               ))
             }
